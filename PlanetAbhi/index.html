@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Planet Abhi</title>
+  <meta name="description" content="A fashion site.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#333333">
+  <link rel="shortcut icon" href="./favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="./css/icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="./css/normalize.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="./css/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="./css/icons.min.css">
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+  </noscript>
+  <script src="./js/cssrelpreload.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.js" defer></script>
+  <script src="./js/main.js" defer></script>
+  <script src="./js/webp.min.js"></script>
+</head>
+
+<body>
+  <div id="mobilenav">
+    <button class="btn" id="mobilenavclosebtn"><i class="icon-cross"></i></button>
+    <nav>
+      <a href="#">home</a>
+      <a href="#">blog</a>
+      <a href="#">looks</a>
+      <a href="#">items</a>
+      <a href="#">trends</a>
+      <a href="#">about</a>
+      <a href="#">contact</a>
+    </nav>
+  </div>
+  <header>
+    <div class="container">
+      <img src="./img/logo.svg">
+      <button class="btn" id="mobilenavbtn"><i class="icon-menu"></i></button>
+      <nav class="separator">
+        <a href="#">home</a>
+        <a href="#">blog</a>
+        <a href="#">looks</a>
+        <a href="#">items</a>
+        <a href="#">trends</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="slider">
+      <div class="container">
+        <picture>
+          <source srcset="./img/banner1.webp" type="image/webp">
+          <img src="./img/banner1.jpg">
+        </picture>
+        <picture>
+          <source srcset="./img/banner2.webp" type="image/webp">
+          <img src="./img/banner2.jpg">
+        </picture>
+        <picture>
+          <source srcset="./img/banner3.webp" type="image/webp">
+          <img src="./img/banner3.jpg">
+        </picture>
+        <div class="picturetext active fade" data-picture="0">
+          <h1>Lorem Ipsum 1</h1>
+          <p>Lorem ipsum 1 dolor sit amet, consectetur adipiscing elit. Curabitur a elementum leo, sagittis pellentesque
+            velit.</p>
+        </div>
+        <div class="picturetext" data-picture="1">
+          <h1>Lorem Ipsum 2</h1>
+          <p>Lorem ipsum 2 dolor sit amet, consectetur adipiscing elit. Curabitur a elementum leo, sagittis pellentesque
+            velit.</p>
+        </div>
+        <div class="picturetext" data-picture="2">
+          <h1>Lorem Ipsum 3</h1>
+          <p>Lorem ipsum 3 dolor sit amet, consectetur adipiscing elit. Curabitur a elementum leo, sagittis pellentesque
+            velit.</p>
+        </div>
+        <div class="previous">
+          <a href="#"><i class="icon-chevron-left"></i></a>
+        </div>
+        <div class="next">
+          <a href="#"><i class="icon-chevron-right"></i></a>
+        </div>
+        <div class="readmore">
+          <div class="square"></div>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </section>
+    <section id="grid">
+      <div class="container flex-equal">
+        <div>
+          <i class="icon-tie"></i>
+          <h2>Looks</h2>
+          <p>Maecenas eu placerat ante. Fusce ut neque justo, et aliquet enim. In hac habitasse platea dictumst. Nullam
+            commodo neque erat, vitae facilisis erat.
+          </p>
+        </div>
+        <div>
+          <i class="icon-image"></i>
+          <h2>Items</h2>
+          <p>Maecenas eu placerat ante. Fusce ut neque justo, et aliquet enim. In hac habitasse platea dictumst. Nullam
+            commodo neque erat, vitae facilisis erat.
+          </p>
+        </div>
+        <div>
+          <i class="icon-rabbit"></i>
+          <h2>Trends</h2>
+          <p>Maecenas eu placerat ante. Fusce ut neque justo, et aliquet enim. In hac habitasse platea dictumst. Nullam
+            commodo neque erat, vitae facilisis erat.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="blogposts">
+      <div class="container">
+        <h1>Latest Blog Posts</h1>
+        <div class="flex-equal">
+          <div>
+            <picture>
+              <source srcset="./img/post1.webp" type="image/webp">
+              <img src="./img/post1.jpg">
+            </picture>
+            <h2>Maecenas eu placerat ante </h2>
+            <p class="text-center text-muted">October 16 2012, 8 Comments</p>
+            <p>In hac habitasse platea dictumst. Nullam commodo neque erat, vitae facilisis erat. Cras at mauris ut
+              tortor vestibulum fringilla vel sed metus</p>
+            <a href="#" class="text-center">Read More...</a>
+          </div>
+          <div>
+            <picture>
+              <source srcset="./img/post2.webp" type="image/webp">
+              <img src="./img/post2.jpg">
+            </picture>
+            <h2>Fusce ut neque justo</h2>
+            <p class="text-center text-muted">October 10 2012, 28 Comments</p>
+            <p>In hac habitasse platea dictumst. Nullam commodo neque erat, vitae facilisis erat. Cras at mauris ut
+              tortor vestibulum fringilla vel sed metus</p>
+            <a href="#" class="text-center">Read More...</a>
+          </div>
+          <div>
+            <picture>
+              <source srcset="./img/post3.webp" type="image/webp">
+              <img src="./img/post3.jpg">
+            </picture>
+            <h2>Neque justo, et aliquet enim.</h2>
+            <p class="text-center text-muted">October 10 2012, 18 Comments</p>
+            <p>In hac habitasse platea dictumst. Nullam commodo neque erat, vitae facilisis erat. Cras at mauris ut
+              tortor vestibulum fringilla vel sed metus</p>
+            <a href="#" class="text-center">Read More...</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div>
+        <nav class="separator">
+          <a href="#">home</a>
+          <a href="#">blog</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+        </nav>
+        <nav>
+          <a href="#"><i class="icon-facebook-square"></i></a>
+          <a href="#"><i class="icon-twitter-square"></i></a>
+          <a href="#"><i class="icon-youtube-square"></i></a>
+          <a href="#"><i class="icon-rss-square"></i></a>
+        </nav>
+      </div>
+      <div class="col2">
+        <p>Original design by <strong>Abhimanyu Rana</strong></p>
+        <p>Made by <strong>Jakub Topoliński</strong></p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

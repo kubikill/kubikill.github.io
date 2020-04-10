@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Builder.io</title>
+  <meta name="description" content="Builder.io lets you generate unique HTML templates tailored for designers.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <meta name="theme-color" content="#a891d1">
+
+  <link rel="preload" href="https://vjs.zencdn.net/7.7.5/video-js.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./css/normalize.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./css/main.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://vjs.zencdn.net/7.7.5/video-js.min.css">
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+  </noscript>
+
+  <script src="https://vjs.zencdn.net/7.7.5/video.min.js" defer></script>
+  <script src="https://kit.fontawesome.com/1daad6563c.js" crossorigin="anonymous" defer></script>
+
+  <script src="./js/webp.min.js"></script>
+</head>
+
+<body>
+  <header class="text-center">
+    <div class="container">
+      <nav>
+        <a href="#">Sign Up</a>
+        <a href="#">Log In</a>
+        <a href="#">Support</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="text-center">
+      <div class="container">
+        <h1 class="text-secondary">Builder.io</h1>
+        <h4 class="text-muted text-normal">Builder.io lets you generate unique HTML templates tailored for designers.
+        </h4>
+        <a href="#" class="btn btn-primary">SIGN UP</a>
+        <picture>
+          <source srcset="img/home.webp" type="image/webp">
+          <img src="img/home.png">
+        </picture>
+      </div>
+    </section>
+    <section id="description1" class="text-center">
+      <div class="container">
+        <a href="#" class="btn btn-secondary">GET STARTED</a>
+        <a href="#" class="btn btn-outline btn-short">TRY DEMO</a>
+        <h2 class="m-t64">Built for creative folk</h2>
+        <h4 class="p-h32 p-b64 text-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua consectetur adipisicing elit.</h4>
+      </div>
+    </section>
+    <section id="description2">
+      <div class="container">
+        <div class="col-2">
+          <div>
+            <h3>Work with your hands</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et sapien dignissim, posuere urna a,
+              elementum est. Fusce facilisis lectus dui, quis rutrum justo maximus ut.</p>
+            <a href="#" class="btn btn-secondary">CREATE ACCOUNT</a>
+          </div>
+          <div>
+            <h3>Optimized for the road</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et sapien dignissim, posuere urna a,
+              elementum est. Fusce facilisis lectus dui, quis rutrum justo maximus ut.</p>
+          </div>
+        </div>
+        <picture>
+          <source srcset="./img/phone.webp" type="image/webp">
+          <img src="./img/phone.png">
+        </picture>
+      </div>
+    </section>
+    <section id="cta1" class="text-center">
+      <div class="container">
+        <h2>TAKE A LOOK INSIDE</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="#" class="btn btn-primary">TAKE MY MONEY!</a>
+        <a href="#" class="btn btn-outline">FREE ACCOUNT</a>
+      </div>
+    </section>
+    <section id="video">
+      <video-js data-setup='{"controls": true, "preload": "auto"}' class="vjs-big-play-centered">
+        <source src="./video/placeholdervideo.webm" type="video/webm">
+        <source src="./video/placeholdervideo.mp4" type="video/mp4">
+      </video-js>
+    </section>
+    <section id="grid" class="flex text-center">
+      <div class="container">
+        <div>
+          <i class="fas fa-chart-area"></i>
+          <h3>Pick your layouts</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="#" class="text-primary">Create Account here</a>
+        </div>
+        <div>
+          <i class="fas fa-archive"></i>
+          <h3>Export</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="#" class="text-primary">See Pricing</a>
+        </div>
+        <div>
+          <i class="fas fa-expand-arrows-alt"></i>
+          <h3>Edit</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="#" class="text-primary">View Support Documents</a>
+        </div>
+      </div>
+    </section>
+    <section id="comparison" class="text-center">
+      <h2 class="text-primary">CHOOSE A SUBSCRIPTION</h2>
+      <p class="text-primary">Lorem ipsum dolor sit amet.</p>
+      <div class="tab">
+        <div class="tabheader">
+          <h4>FREE ACCOUNT</h4>
+        </div>
+        <div class="tabmain">
+          <p><strong>Great for giving it a try or the one off web designer</strong></p>
+          <h2 class="text-tertiary">Free</h2>
+          <ul>
+            <li>Save up to 2 layouts</li>
+            <li>Export 1 HTML template</li>
+            <li>15 Layout Options</li>
+            <li>Tweet to get more layouts</li>
+          </ul>
+          <a href="#" class="btn btn-primary-outline">SIGN UP <i class="fas fa-check"></i></a>
+        </div>
+        <p>Join <strong class="text-primary">34,293</strong> users</p>
+      </div>
+      <div class="tab">
+        <div class="tab-shadow">
+          <div class="tabheader">
+            <h4>FREE ACCOUNT</h4>
+          </div>
+          <div class="tabmain border-strong">
+            <p><strong>Great for giving it a try or the one off web designer</strong></p>
+            <h2 class="text-tertiary">$89<span class="text-muted">/ Yearly</span></h2>
+            <ul>
+              <li>Save unlimited layouts</li>
+              <li>Export unlimited HTML templates</li>
+              <li>Over 30 Layout Options & counting</li>
+              <li>New Layouts added monthly</li>
+              <li>Learning Documentation</li>
+              <li>Something else</li>
+            </ul>
+            <a href="#" class="btn btn-secondary-dark">SIGN UP <i class="fas fa-check"></i></a>
+          </div>
+        </div>
+        <p>Join <strong class="text-primary">1,828</strong> users</p>
+      </div>
+    </section>
+    <section id="ipad">
+      <picture id="ipadImg">
+        <source srcset="./img/ipad.webp" type="image/webp">
+        <img src="./img/ipad.png">
+      </picture>
+      <div id="bar">
+
+      </div>
+    </section>
+    <section id="cta2" class="text-center">
+      <div class="container">
+        <a href="#" class="btn btn-primary">TAKE MY MONEY!</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <dl>
+        <dt>
+          <h4>BUILDER.IO</h4>
+        </dt>
+        <dd><a href="#">Login</a></dd>
+        <dd><a href="#">Sign Up</a></dd>
+        <dd><a href="#">Support</a></dd>
+        <dd><a href="#">Contact Us</a></dd>
+      </dl>
+      <dl>
+        <dt>
+          <h4>COMPANY</h4>
+        </dt>
+        <dd><a href="#">About Us</a></dd>
+        <dd><a href="#">Blog</a></dd>
+        <dd><a href="#">Contact</a></dd>
+      </dl>
+      <dl>
+        <dt>
+          <h4>LEARNING</h4>
+        </dt>
+        <dd><a href="#">Support Articles</a></dd>
+        <dd><a href="#">Support Documentation</a></dd>
+        <dd><a href="#">Forum</a></dd>
+        <dd><a href="#">How to Videos</a></dd>
+      </dl>
+    </div>
+  </footer>
+</body>
+
+</html>

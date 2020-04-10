@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Jakub Topoliński</title>
+    <meta name="description" content="Jakub Topoliński, Front-End Web Developer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#0a4900">
+    <link rel="shortcut icon" href="./favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="msapplication-config" content="./favicon/browserconfig.xml">
+    <meta name="theme-color" content="#0a4900">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;500&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./css/normalize.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./css/icon.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;500&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+        <link rel="stylesheet" href="./css/normalize.min.css">
+        <link rel="stylesheet" href="./css/icon.min.css">
+    </noscript>
+    <script src="./js/cssrelpreload.min.js"></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/webp.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div data-toggle="#home" data-active="true"><i class="icon-home"></i><a href="#"
+                    data-string="menuHome">Home</a></div>
+            <div data-toggle="#projects" data-active="false"><i class="icon-star"></i><a href="#"
+                    data-string="menuProjects">Projects</a>
+            </div>
+            <div class="dropdown" tabindex="0">
+                <i class="icon-earth"></i><span data-string="menuLanguage">Language</span><i class="arrow-down"></i>
+                <div class="dropdown-content">
+                    <input name="language" type="radio" id="eng" value="eng" checked><label for="eng"><a
+                            href="#">English</a></label>
+                    <input name="language" type="radio" id="pol" value="pol"><label for="pol"><a
+                            href="#">Polski</a></label>
+                </div>
+            </div>
+        </header>
+        <section id="home" class="visible fade hor-vert-center">
+            <div class="container fade-on-load">
+                <div>
+                    <h2>Front-End<br>Web Developer</h2>
+                    <h1>Jakub Topoliński</h1>
+                </div>
+                <div>
+                    <p data-string="homeDescription1">Hi! I'm Jakub and I'm from Poland.</p>
+                    <p data-string="homeDescription2">I am a self-taught junior front-end web developer, with a
+                        goal to become a full-stack web
+                        developer. I'm always looking for opportunities to learn something new and to challenge myself.
+                    </p>
+                    <button class="primary" data-toggleMenu="#projects" data-string="homeProjectsBtn" tabindex="0">Check
+                        out my projects!</button>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h1 data-string="projectsHeading">Projects</h1>
+            <div id="projects-grid">
+                <a href="#" class="project-container" data-project="planetabhi" tabindex="0">
+                    <h3>Planet Abhi</h3>
+                    <picture>
+                        <source srcset="./img/planetabhi.webp" type="image/webp">
+                        <img src="./img/planetabhi.png">
+                    </picture>
+                    <p class="project-shortdescription" data-string="planetAbhi_ShortDesc">A site created for a
+                        fictional
+                        website about fashion, based on a PSD design.</p>
+                    <p class="icons">
+                        <i class="icon-html" title="HTML5"></i>
+                        <i class="icon-css" title="CSS3"></i>
+                        <i class="icon-javascript" title="Javascript"></i>
+                    </p>
+                </a>
+                <a href="#" class="project-container" data-project="builderio" tabindex="0">
+                    <h3>Builder.io</h3>
+                    <picture>
+                        <source srcset="./img/builderio.webp" type="image/webp">
+                        <img src="./img/builderio.png">
+                    </picture>
+                    <p class="project-shortdescription" data-string="builderIo_ShortDesc">A site created for a fictional
+                        web-based online website builder, based on a PSD design.</p>
+                    <p class="icons">
+                        <i class="icon-html" title="HTML5"></i>
+                        <i class="icon-css" title="CSS3"></i>
+                    </p>
+                </a>
+                <a href="#" class="project-container" data-project="tf2unboxer">
+                    <h3>TF2 Unboxer</h3>
+                    <picture>
+                        <source srcset="./img/tf2unboxerthumbnail.webp" type="image/webp">
+                        <img src="./img/tf2unboxerthumbnail.png">
+                    </picture>
+                    <p class="project-shortdescription" data-string="tf2Unboxer_ShortDesc">A Team Fortress 2 crate
+                        simulator.<br>Originally released in late
+                        2018.<br>My largest project yet.</p>
+                    <p class="icons">
+                        <i class="icon-html" title="HTML5"></i>
+                        <i class="icon-css" title="CSS3"></i>
+                        <i class="icon-javascript" title="JavaScript"></i>
+                        <i class="icon-pwa" title="Progressive Web App"></i>
+                    </p>
+                </a>
+                <a href="#" class="project-container" data-project="greenerclicker">
+                    <h3>Greener Clicker</h3>
+                    <picture>
+                        <source srcset="./img/greenerclicker.webp" type="image/webp">
+                        <img src="./img/greenerclicker.png">
+                    </picture>
+                    <p class="project-shortdescription" data-string="greenerClicker_ShortDesc">A short and silly incremental game,
+                        created in under 72 hours for Clicker Jam 2.</p>
+                    <p class="icons">
+                        <i class="icon-html" title="HTML5"></i>
+                        <i class="icon-css" title="CSS3"></i>
+                        <i class="icon-javascript" title="JavaScript"></i>
+                    </p>
+                </a>
+                <a href="#" class="project-container" data-project="blaeogenerators">
+                    <h3>BLAEO Generators</h3>
+                    <picture>
+                        <source srcset="./img/blaeogenerators.webp" type="image/webp">
+                        <img src="./img/blaeogenerators.png">
+                    </picture>
+                    <p class="project-shortdescription" data-string="blaeoGenerators_ShortDesc">A post snippet
+                        generator,
+                        made for members of the Backlog Assassins Extraordinaire group.</p>
+                    <p class="icons">
+                        <i class="icon-html" title="HTML5"></i>
+                        <i class="icon-css" title="CSS3"></i>
+                        <i class="icon-bootstrap" title="Bootstrap"></i>
+                        <i class="icon-javascript" title="JavaScript"></i>
+                        <i class="icon-api" title="API"></i>
+                    </p>
+                </a>
+            </div>
+        </section>
+        <footer>
+            <a href="https://github.com/kubikill" target="_blank"><i class="icon-github"></i>GitHub</a>
+            <a href="mailto:topolinskijakub5@gmail.com" target="_blank"><i class="icon-mail"></i>E-mail</a>
+        </footer>
+    </main>
+    <div class="project-details" data-project="tf2unboxer">
+        <div class="project-details-container">
+            <h1>TF2 Unboxer</h1>
+            <div class="col-container">
+                <div class="col-sm">
+                    <picture>
+                        <source srcset="./img/tf2unboxer.webp" type="image/webp">
+                        <img src="./img/tf2unboxer.png">
+                    </picture>
+                </div>
+                <div class="col-lg">
+                    <h1>TF2 Unboxer</h1>
+                    <div class="proj-det-btns">
+                        <a href="https://tf2unboxer.tk" target="_blank" tabindex="-1"><button class="primary"
+                                data-string="projectDetailsViewBtn">View live</button></a>
+                        <a href="https://github.com/kubikill/tf2unboxer" target="_blank" tabindex="-1"><button
+                                class="primary" data-string="projectDetailsGithubBtn">View on Github</button></a>
+                    </div>
+                    <div class="proj-det-desc" tabindex="0">
+                        <p data-string="tf2Unboxer_Desc1">This is a Progressive Web App, which simulates opening crates
+                            and cases in Team Fortress 2.
+                        </p>
+                        <p data-string="tf2Unboxer_Desc2">My largest project yet, I spent countless hours working on it.
+                            It provided me with many
+                            interesting challenges and it certainly taught me a lot about web development.</p>
+                        <p data-string="tf2Unboxer_Desc3">As a PWA, the site caches files for better performance and
+                            offline capability. It can also be
+                            installed on the user's device.</p>
+                        <p data-string="tf2Unboxer_Desc4">Currently working on a code rewrite for the upcoming version
+                            2.0.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="proj-det-exit">X</button>
+        </div>
+    </div>
+    <div class="project-details" data-project="planetabhi">
+        <div class="project-details-container">
+            <h1>Planet Abhi</h1>
+            <div class="col-container">
+                <div class="col-sm">
+                    <picture>
+                        <source srcset="./img/planetabhitall.webp" type="image/webp"
+                            media="only screen and (min-width: 992px)">
+                        <source srcset="./img/planetabhitall.png" media="only screen and (min-width: 992px)">
+                        <source srcset="./img/planetabhi.webp" type="image/webp">
+                        <img src="./img/planetabhi.png">
+                    </picture>
+                </div>
+                <div class="col-lg">
+                    <h1>Planet Abhi</h1>
+                    <div class="proj-det-btns">
+                        <a href="https://kubikill.github.io/PlanetAbhi/" target="_blank" tabindex="-1"><button
+                                class="primary" data-string="projectDetailsViewBtn">View live</button></a>
+                        <a href="https://github.com/kubikill/" target="_blank" tabindex="-1"><button class="primary"
+                                data-string="projectDetailsGithubBtn">View on Github</button></a>
+                    </div>
+                    <div class="proj-det-desc" tabindex="0">
+                        <p data-string="planetAbhi_Desc1">A site created for a
+                            fictional
+                            website about fashion. Built to practice creating static sites based
+                            on PSD designs.</p>
+                            <p data-string="planetAbhi_Desc2">This site uses CSS prefers-color-scheme! If your device's preferences are set to use dark color theme, the site will change its colors to respect that.</p>
+                        <p data-string="planetAbhi_Desc3">Displays well on devices of any screen width, has a fullscreen menu for small devices and has a carousel with automatic scrolling.</p>
+                        <p>
+                            <a href="https://freebiesbug.com/psd-freebies/minimal-website-template-psd/"
+                                target="_blank">
+                                <span data-string="projectDetailsDesignSource">Original design by</span>Abhimanyu Rana
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="proj-det-exit">X</button>
+        </div>
+    </div>
+    <div class="project-details" data-project="builderio">
+        <div class="project-details-container">
+            <h1>Builder.io</h1>
+            <div class="col-container">
+                <div class="col-sm">
+                    <picture>
+                        <source srcset="./img/builderiotall.webp" type="image/webp"
+                            media="only screen and (min-width: 992px)">
+                        <source srcset="./img/builderiotall.png" media="only screen and (min-width: 992px)">
+                        <source srcset="./img/builderio.webp" type="image/webp">
+                        <img src="./img/builderio.png">
+                    </picture>
+                </div>
+                <div class="col-lg">
+                    <h1>Builder.io</h1>
+                    <div class="proj-det-btns">
+                        <a href="https://kubikill.github.io/BuilderIo" target="_blank" tabindex="-1"><button
+                                class="primary" data-string="projectDetailsViewBtn">View live</button></a>
+                        <a href="https://github.com/kubikill/" target="_blank" tabindex="-1"><button class="primary"
+                                data-string="projectDetailsGithubBtn">View on Github</button></a>
+                    </div>
+                    <div class="proj-det-desc" tabindex="0">
+                        <p data-string="builderIo_Desc1">A site created for a fictional web-based online website
+                            builder. Built to practice creating static sites based on PSD designs.</p>
+                        <p data-string="builderIo_Desc2">Displays well on devices of any screen width, has subtle
+                            header/button animations and uses compressed images to reduce size as much as possible
+                            without sacrificing too much image quality.</p>
+                        <p><a href="https://blazrobar.com/free-psd-website-templates/builder-a-free-vibrant-web-app-psd-template/"
+                                target="_blank"><span data-string="projectDetailsDesignSource">Original design by
+                                </span>Blaz Robar</a></p>
+                    </div>
+                </div>
+            </div>
+            <button class="proj-det-exit">X</button>
+        </div>
+    </div>
+    <div class="project-details" data-project="greenerclicker">
+        <div class="project-details-container">
+            <h1>Greener Cicker</h1>
+            <div class="col-container">
+                <div class="col-sm">
+                    <picture>
+                        <source srcset="./img/greenerclicker.webp" type="image/webp">
+                        <img src="./img/greenerclicker.png">
+                    </picture>
+                </div>
+                <div class="col-lg">
+                    <h1>Greener Clicker</h1>
+                    <div class="proj-det-btns">
+                        <a href="https://kubikill.github.io/greenerclicker" target="_blank" tabindex="-1"><button
+                                class="primary" data-string="projectDetailsViewBtn">View live</button></a>
+                        <a href="https://github.com/kubikill/greenerclicker" target="_blank" tabindex="-1"><button
+                                class="primary" data-string="projectDetailsGithubBtn">View on Github</button></a>
+                    </div>
+                    <div class="proj-det-desc" tabindex="0">
+                        <p data-string="greenerClicker_Desc1">A short, silly incremental game, created in under 72 hours for
+                            Clicker Jam 2.</p>
+                        <p data-string="greenerClicker_Desc2">Albeit small, this was one of the more exciting projects
+                            to me, mainly due to the strict time limit. I had only 72 hours to make a working
+                            incremental game that fits the game jam's theme (which was "Green") and I had no experience
+                            making incremental games in the past. What could possibly go wrong?</p>
+                        <p data-string="greenerClicker_Desc3">I had so many ideas which I wanted to implement but I had
+                            abandon them as I wouldn't make it before the deadline. I ended up submitting the game to
+                            the jam with one bug: once you complete the game, the playtime wouldn't display correctly...
+                            all because I forgot to type one "0". If I only had one more day, I could've done so much
+                            more...</p>
+                        <p data-string="greenerClicker_Desc4">I'm considering returning to this project at some point to
+                            give it more polish, add some QoL improvements, make it mobile-friendly and maybe even add a
+                            bit more content.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="proj-det-exit">X</button>
+        </div>
+    </div>
+    <div class="project-details" data-project="blaeogenerators">
+        <div class="project-details-container">
+            <h1>BLAEO Generators</h1>
+            <div class="col-container">
+                <div class="col-sm">
+                    <picture>
+                        <source srcset="./img/blaeogeneratorstall.webp" type="image/webp"
+                            media="only screen and (min-width: 992px)">
+                        <source srcset="./img/blaeogeneratorstall.png" media="only screen and (min-width: 992px)">
+                        <source srcset="./img/blaeogenerators.webp" type="image/webp">
+                        <img src="./img/blaeogenerators.png">
+                    </picture>
+                </div>
+                <div class="col-lg">
+                    <h1>BLAEO Generators</h1>
+                    <div class="proj-det-btns">
+                        <a href="https://kubikill.github.io/blaeogenerators" target="_blank" tabindex="-1"><button
+                                class="primary" data-string="projectDetailsViewBtn">View live</button></a>
+                        <a href="https://github.com/kubikill/blaeogenerators" target="_blank" tabindex="-1"><button
+                                class="primary" data-string="projectDetailsGithubBtn">View on Github</button></a>
+                    </div>
+                    <div class="proj-det-desc" tabindex="0">
+                        <p data-string="blaeoGenerators_Desc1">A post snippet generator, made for members of the Backlog
+                            Assassins Extraordinaire group.</p>
+                        <p data-string="blaeoGenerators_Desc2">Group members can use the generator to make various
+                            snippets in HTML/CSS containing their video game statistics. It's also simple enough to be
+                            used without any problem by members who have no HTML/CSS knowledge.</p>
+                        <p data-string="blaeoGenerators_Desc3">The site uses the API on the group's website to fetch
+                            game libraries and statistics of group members. The game statistics can later be
+                            automatically filled in the generator for the user.</p>
+                        <p data-string="blaeoGenerators_Desc4">Unfortunately, the generator is not much of use to any
+                            non-member, as the code is specifically designed to be put on the group website and the
+                            snippets will not display properly on any other site.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="proj-det-exit">X</button>
+        </div>
+    </div>
+</body>
+
+</html>
