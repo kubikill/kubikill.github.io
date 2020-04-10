@@ -37,7 +37,7 @@ a {
 }
 
 .text-muted {
-  color: #969494;
+  color: #969595;
 }
 
 div.flex-equal div {
@@ -115,7 +115,7 @@ footer a:hover,
 #mobilenav a:hover,
 .btn:hover,
 .text-muted {
-  color: #969494 !important;
+  color: #969595 !important;
 }
 
 header .container {
@@ -359,7 +359,7 @@ footer i {
   }
 
   section#blogposts a:hover {
-    color: #555;
+    color: #ddd;
   }
 }
 
