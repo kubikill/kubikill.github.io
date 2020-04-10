@@ -17,7 +17,7 @@ main {
   background-attachment: fixed;
 }
 
-body.webp {
+main.webp {
   background-image: url("../img/bg.webp");
 }
 
