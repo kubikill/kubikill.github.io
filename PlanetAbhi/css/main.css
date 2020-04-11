@@ -334,7 +334,8 @@ footer i {
   section#blogposts h2,
   section#slider .previous,
   section#slider .next,
-  section#slider .readmore {
+  section#slider .readmore,
+  nav.separator a:not(:first-child)::before {
     color: #cec3cd;
   }
   #mobilenav {
