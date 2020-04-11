@@ -223,6 +223,7 @@ section#slider .picturetext {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s;
+  margin: 0;
 }
 
 section#slider .picturetext.active {
@@ -387,6 +388,9 @@ footer i {
 
   section#slider {
     height: 300px;
+  }
+  section#slider .picturetext {
+    margin: .67em 0;
   }
 
   section#slider .picturetext p {
