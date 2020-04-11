@@ -424,7 +424,8 @@ section#ipad #ipadImg {
 
 footer .container {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
 }
 
 footer dd {
@@ -453,6 +454,11 @@ footer a:hover {
   header nav {
     text-align: right;
   }
+  footer .container {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -480,6 +486,11 @@ footer a:hover {
   section.flex>.container {
     display: flex;
     justify-content: space-between;
+  }
+  footer .container {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-evenly;
   }
 }
 
