@@ -23,26 +23,49 @@
     <meta name="msapplication-config" content="./favicon/browserconfig.xml">
     <meta name="theme-color" content="#0a4900">
 
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;500&display=swap" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="./css/normalize.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="./css/icon.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="./css/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;500&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
-        <link rel="stylesheet" href="./css/normalize.min.css">
-        <link rel="stylesheet" href="./css/icon.min.css">
-        <link rel="stylesheet" href="./css/main.min.css">
-    </noscript>
-    <script src="./js/cssrelpreload.min.js"></script>
-    <script src="./js/main.js" defer></script>
-    <script src="./js/webp.min.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;500&display=swap"
+        media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" media="print"
+        onload="this.media='all'">
+    <link rel="stylesheet" href="./css/icon.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./css/main.min.css" media="print" onload="this.media='all'">
+    <style>
+        html,
+        body {
+            color: #E9F1F7;
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #0c5c04;
+            background-image: url("../img/bg.png");
+            background-size: 250vh;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        body.no-scroll {
+            overflow: hidden;
+        }
+
+        main {
+            visibility: hidden;
+        }
+
+        .project-details {
+            visibility: hidden;
+            position: fixed;
+            opacity: 0;
+        }
+
+        body.webp {
+            background-image: url("../img/bg.webp");
+        }
+    </style>
+    <script src="./js/main.min.js" defer></script>
 </head>
 
-<body class="webp">
+<body class="webp no-scroll">
     <main>
         <header>
             <div data-toggle="#home" data-active="true"><i class="icon-home"></i><a href="#"

@@ -27,6 +27,9 @@ document.querySelectorAll("[data-toggleMenu]").forEach(el => {
 const mainElement = document.getElementsByTagName("main")[0];
 mainElement.style.backgroundPosition = `${Math.floor(Math.random() * 101)}% ${Math.floor(Math.random() * 101)}%`; // Generate numbers from 0 to 100
 
+// Detect WebP support
+!function(e){"use strict";var n=function(e){var n=new Image;n.src="data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA",n.onload=n.onerror=function(){e(2===n.height)}},t=function(n){if(!n){e.body.classList.remove("webp")}};e.addEventListener("DOMContentLoaded",n(t))}(document);
+
 // Project details
 document.querySelectorAll("[data-project]").forEach(el => {
     el.onclick = () => {
@@ -81,6 +84,11 @@ function changeLanguage(lang, anim) {
             el.innerHTML = langStrings[el.dataset.string][lang];
         }
     });
+    if (lang == "pol") {
+        document.documentElement.lang = "pl";
+    } else {
+        document.documentElement.lang = "en";
+    }
 }
 document.querySelectorAll("[name=language]").forEach(el => {
     el.onchange = () => {
@@ -242,3 +250,6 @@ navigator.languages.some(lang => {
             return true;
     }
 });
+window.onload = () => {
+    document.body.classList.remove("no-scroll")
+};

@@ -2,29 +2,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  color: #E9F1F7;
-  font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-main {
-  background-image: url("../img/bg.png");
-  background-size: 250vh;
-  background-attachment: fixed;
-}
-
-.webp main {
-  background-image: url("../img/bg.webp");
-}
-
-body.no-scroll {
-  overflow: hidden;
-}
-
 [data-string] {
   transition: opacity 0.3s;
 }
@@ -208,6 +185,7 @@ button.primary {
   color: #000;
   cursor: pointer;
   transition: background-color 0.2s, opacity 0.3s;
+  font-size: 100%;
 }
 
 button.primary:hover,
@@ -222,6 +200,7 @@ main {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  visibility: visible !important;
 }
 
 header {
@@ -341,14 +320,11 @@ section#home button {
 }
 
 .project-details {
-  visibility: hidden;
-  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background-color: #000A;
-  opacity: 0;
   transition: opacity 0.3s;
 }
 
