@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: kubikill.github.io
+Token: a3ff057cd016338d95eb21abcc745cfdf2e49072c553862d0970232b28d457e6
