@@ -23,17 +23,26 @@
     <meta name="msapplication-config" content="./favicon/browserconfig.xml">
     <meta name="theme-color" content="#0a4900">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="./font/icon.ttf?ca6xsv" as="font" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;500&display=swap"
-        media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" media="print"
-        onload="this.media='all'">
-    <link rel="stylesheet" href="./css/icon.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="./css/main.min.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;500&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./css/icon.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./css/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;500&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+        <link rel="stylesheet" href="./css/icon.min.css">
+        <link rel="stylesheet" href="./css/main.min.css">
+    </noscript>
     <style>
         body.webp {
             background-image: url("../img/bg.webp") !important;
         }
+
         html,
         body {
             color: #E9F1F7;
@@ -62,13 +71,7 @@
             opacity: 0;
         }
     </style>
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;500&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
-        <link rel="stylesheet" href="./css/icon.min.css">
-        <link rel="stylesheet" href="./css/main.min.css">
-    </noscript>
-    <script src="./js/main.min.js" defer></script>
+    <script src="./js/main.prod.js" defer></script>
 </head>
 
 <body class="webp no-scroll">
@@ -140,7 +143,6 @@
                 <a href="#" class="project-container" data-project="tf2unboxer">
                     <h3>Unboxer.tf</h3>
                     <picture>
-                        <source srcset="./img/tf2unboxerthumbnail.webp" type="image/webp">
                         <img src="./img/tf2unboxerthumbnail.png" loading="lazy">
                     </picture>
                     <p class="project-shortdescription" data-string="tf2Unboxer_ShortDesc">A Team Fortress 2 crate/case
@@ -222,8 +224,9 @@
                         <p data-string="tf2Unboxer_Desc3">As a PWA, the site caches files for better performance and
                             offline capability. It can also be
                             installed on the user's device.</p>
-                        <p data-string="tf2Unboxer_Desc4">Currently working on a code rewrite for the upcoming version
-                            2.0.</p>
+                        <p data-string="tf2Unboxer_Desc4">This project received a version 2.0 update in November 2020,
+                            which included a nearly complete code rewrite, performance improvements and many other new
+                            features.</p>
                     </div>
                 </div>
             </div>

@@ -175,7 +175,7 @@ const langStrings = {
         pol: "To jest aplikacja PWA, która symuluje otwieranie skrzyenk w Team Fortress 2."
     },
     tf2Unboxer_Desc2: {
-        eng: "My largest project yet, I spent countless hours working on it. It provided me with many interesting challenges and it certainly taught me a lot about web development.",
+        eng: "My largest project yet, I spent hundreds of hours working on it. It provided me with many interesting challenges and it certainly taught me a lot about web development.",
         pol: "Dotychczas jest to mój największy projekt. Spędziłem mnóstwo czasu, pracując nad nim. Dzięki temu projektowi napotkałem wiele interesujących wyzwań i nauczyłem się wiele rzeczy o programowaniu webowym."
     },
     tf2Unboxer_Desc3: {
@@ -183,8 +183,8 @@ const langStrings = {
         pol: "Jako PWA, strona zapisuje pliki w pamięci podręcznej dla lepszej wydajności i możliwości używania strony offline. Stronę można też zainstalować na swoim urządzeniu."
     },
     tf2Unboxer_Desc4: {
-        eng: "Currently working on a code rewrite for the upcoming version 2.0.",
-        pol: "Obecnie pracuję nad rewritem kodu do wersji 2.0."
+        eng: "This project received a version 2.0 update in November 2020, which included a nearly complete code rewrite, performance improvements and many other new features.",
+        pol: "Ten projekt otrzymał aktualizację 2.0 w listopadzie 2020, w którym prawie całkowite napisano kod od nowa, poprawiono wydajność i dodano wiele innych funkcji."
     },
     builderIo_ShortDesc: {
         eng: "A site created for a fictional web-based online website builder, based on a PSD design.",
@@ -250,6 +250,3 @@ navigator.languages.some(lang => {
             return true;
     }
 });
-window.onload = () => {
-    document.body.classList.remove("no-scroll")
-};
