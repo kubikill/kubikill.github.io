@@ -198,6 +198,22 @@ const langStrings = {
         eng: "Displays well on devices of any screen width, has menu/button animations and uses compressed images to reduce size as much as possible without sacrificing too much image quality.",
         pol: "Wyświetla się dobrze na urządzeniach o dowolnej szerokości ekranu, ma animacje menu/przycisków i używa obrazów obraz skompresowanych tak, by zajmowały jak najmniej miejsca, nie zmniejszając za bardzo jakości."
     },
+    aSweeperofMines_ShortDesc: {
+        eng: "A reverse Minesweeper/nonogram hybrid puzzle game.",
+        pol: "Gra logiczna - hybryda odwrotnego Sapera z nonogramem."
+    },
+    aSweeperofMines_Desc1: {
+        eng: "A reverse Minesweeper/nonogram hybrid puzzle game, inspired by the Mines minigame in macdows 95.",
+        pol: "Gra logiczna - hybryda odwrotnego Sapera z nonogramem, zainspirowana minigrą Mines z macdows 95."
+    },
+    aSweeperofMines_Desc2: {
+        eng: "I was surprised to find that no one bothered making a browser version of reverse Minesweeper so I just went ahead and made one myself so I can play it during downtime.",
+        pol: "Zdziwiłem się jak się dowiedziałem, że nikt jeszcze nie zrobił przeglądarkowej wersji odwrotnego Sapera, więc postanowiłem zrobić go sam w trakcie przerwy."
+    },
+    aSweeperofMines_Desc3: {
+        eng: 'I also used this project to try <a href="https://v2.parceljs.org/" rel="noopener">Parcel 2</a>.',
+        pol: 'Użyłem też tego projektu jako okazji do wypróbowania <a href="https://v2.parceljs.org/" rel="noopener">Parcela 2</a>.'
+    },
     greenerClicker_ShortDesc: {
         eng: "A short and silly incremental game, created in under 72 hours for Clicker Jam 2.",
         pol: "Krótka, zabawna gra typu incremental, stworzona w 72 godzin podczas Clicker Jam 2."
