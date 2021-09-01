@@ -81,6 +81,7 @@ function changeLanguage(lang, anim) {
                 el.classList.remove("fadeOut");
             }, 300);
         } else {
+            console.log(el.dataset.string);
             el.innerHTML = langStrings[el.dataset.string][lang];
         }
     });
